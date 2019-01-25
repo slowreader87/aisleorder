@@ -1,0 +1,242 @@
+// body {
+//   padding: 10px;
+//   font-family: sans-serif;
+// }
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 10rem;
+}
+
+.title-bar {
+background: #e35557;
+color: white; // means white text and reddish bg
+max-width: 98rem;
+padding: 2rem;
+}
+
+.tagline {
+  font-size: 5rem;
+}
+
+.instruction {
+  font-size: 3.5rem;
+}
+
+body {
+  background: #f2f2f2;
+  color:#555555;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+
+
+html {
+font-size: 62.5%;
+}
+
+.form {
+  margin: 0 auto;
+}
+
+.wrapper {
+  margin: 0 auto; // sets the top and bottom to 0px and
+                  //left and right to auto, centering the content
+  //max-width: 120rem;
+  padding: 1.3rem;
+  width: 80%;
+  min-width: 100rem; // ensures it doesnt all start flowing when you resize the page!
+}
+
+.buttonsDiv {
+width: 100%;
+margin: 0 0 3rem 0;
+}
+
+.listItem {
+  background: #ffffff;
+  //line-height: auto;
+  font-size: 4rem;
+  font-weight: 500;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 0.3rem;
+  padding: 1.3rem;
+  border: solid 2px #d0d9e5;
+  padding: 2rem;
+  //display: flex;
+}
+
+.textBox {
+  background: #ffffff;
+  line-height: 8rem;
+  font-size: 4rem;
+  font-weight: 500;
+  border: 1px solid #e8e8e8;
+  margin: 2rem 0 1rem 1rem;;
+  padding: 1.3rem;
+  border: solid 2px #d0d9e5;
+  width: 70%;
+  //display: flex;
+}
+
+.itemButton {
+  padding: 2rem;
+  float: right;
+  background: #edeff2;
+  //height: auto;
+  width: 15rem;
+  border: 1px solid #555555;
+  font-size: 3rem;
+  border-radius: 10%;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+.removeButton {
+  background: #ea7270;
+  width: 8rem;
+}
+
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.check {
+  -webkit-transform: scale(2);
+  //transform: scale(5);
+  zoom: 2;
+  margin-left: 30rem;
+  //align-items: center;
+}
+
+.quantityBox {
+  //background: #edeff2;
+  max-width: 14rem;
+  margin-left: 2rem;
+
+  //border: 1px solid #555555;
+  // //height: rem;
+  // width: 5rem;
+  // padding-left: 0.5rem;
+  // margin-top: 2rem;
+  // margin-left: 2rem;
+  // line-height: 4rem;
+  // border-radius: 5%;
+  // font-size: 3rem;
+}
+
+.strikeThrough {
+  text-decoration: line-through;
+}
+
+// .check {
+//   font-size: 5rem;
+//   height: 10rem;
+//   width: 10rem;
+// }
+
+.button { // a block
+//background: #29c67a;
+border: 1px solid #555555;
+color: #000000; //text color
+cursor: pointer; //this is the finger pointer
+font-weight: auto;
+font-size: 3rem;
+margin: 2rem 1rem 1rem 1rem;
+outline: none;
+border-radius: 3%; //50% makes it circular
+height: 12rem;
+width: 23rem;
+padding: 1rem;
+transition: background .2s ease, transform .2s ease;
+&:hover, &:focus { //&: is an scss feature that lets us add things to the current selector. :denotes pseudo-
+// selector. When someone hovers over it the pseudo selector hover is automatically applied, so we can style that.
+    background: white; // this works with the transition parameter set in the parent above
+  }
+&:active {
+    background: #cccccc; // sets the button's active state to darker grey
+    transform: scale(1.1); // increases the size slightly when active. Transform brought in in css3
+  }
+}
+
+.colorFruitandVeg {
+  background:#29c67a;
+}
+
+.colorDairy {
+  background:#fff9e2;
+}
+
+.colorMeatandFish {
+  background:#ff4f4f;
+}
+
+.colorReadyMeals {
+  background:#fcd95a;
+}
+
+.colorHamsandDips {
+  background: #f5afff;
+}
+
+.colorCounter {
+  background: #e0e0d5;
+}
+
+.colorDry {
+  background: #c1974d;
+}
+
+.colorHousehold {
+  background: #70cce5;
+}
+
+.colorBread {
+  background: #d3cf9e;
+}
+
+.colorBaking {
+  background: #b49ce5;
+}
+
+.colorFrozen {
+  background: #2be2ef;
+}
+
+.colorBaby {
+  background: #f7cdf4;
+}
+
+.colorMandS {
+  background: #309100;
+  border: red dashed 4px;
+}
+
+.colorBoots {
+  background: #1f62c6;
+  border: white dashed 4px;
+}
+
+.colorBootsItem {
+  background: #1f62c6;
+  border: white dashed 4px;
+  color: white;
+}
+.colorWilko {
+  background: #ff7860;
+  border: blue dashed 4px;
+}
+
+.colorTop {
+  background: #ef862b;
+}
+
+.button-colorBlue {
+  background:#56a5ef;
+}
