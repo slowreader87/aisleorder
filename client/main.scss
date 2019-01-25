@@ -15,7 +15,7 @@ h1 {
 .title-bar {
 background: #e35557;
 color: white; // means white text and reddish bg
-max-width: 98rem;
+max-width: 90rem;
 padding: 2rem;
 }
 
@@ -50,7 +50,7 @@ font-size: 62.5%;
   //max-width: 120rem;
   padding: 1.3rem;
   width: 80%;
-  min-width: 100rem; // ensures it doesnt all start flowing when you resize the page!
+  min-width: 96rem; // ensures it doesnt all start flowing when you resize the page!
 }
 
 .buttonsDiv {
@@ -60,7 +60,8 @@ margin: 0 0 3rem 0;
 
 .listItem {
   background: #ffffff;
-  //line-height: auto;
+  width: 91rem;
+  line-height: 7rem;
   font-size: 4rem;
   font-weight: 500;
   border: 1px solid #e8e8e8;
@@ -80,7 +81,7 @@ margin: 0 0 3rem 0;
   margin: 2rem 0 1rem 1rem;;
   padding: 1.3rem;
   border: solid 2px #d0d9e5;
-  width: 70%;
+  width: 50%;
   //display: flex;
 }
 
@@ -152,7 +153,7 @@ margin: 2rem 1rem 1rem 1rem;
 outline: none;
 border-radius: 3%; //50% makes it circular
 height: 12rem;
-width: 23rem;
+width: 22rem;
 padding: 1rem;
 transition: background .2s ease, transform .2s ease;
 &:hover, &:focus { //&: is an scss feature that lets us add things to the current selector. :denotes pseudo-

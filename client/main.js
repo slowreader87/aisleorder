@@ -161,7 +161,7 @@ const items = ShoppingList.find({}, {sort: {AisleId:1}, limit:100}).fetch(); // 
 
       <div className="buttonsDiv">
       <form onSubmit={handleSubmit} className="form">
-        <input type="text" className="textBox" name="listItem" placeholder="Enter item and tap an aisle (40 chars max)"/>
+        <input type="text" className="textBox" name="listItem" placeholder="Enter list item"/>
         {/* <input type="text" className="listItem quantityBox" name="quantityBox" placeholder="quantity"/> */}
         <br></br><button className="button colorFruitandVeg"
           onClick={() => ShoppingList.insert({Aisle: 'Fruit & Veg', AisleId: 11, createdAt: new Date()})}>
