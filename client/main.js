@@ -35,7 +35,7 @@ e.target.listItem.value = ''; // reset the comment box back to blank after use.
 };
 
 const renderItems = function(shoppingList){
-  return shoppingList.map(function(item, i, src){ // left i and src here as you could use them if you wanted to access the iteration e.g.
+  return shoppingList.map(function(item, index, sourceArray){ // left i and src here as you could use them if you wanted to access the iteration e.g.
     // to compare current item with the next item. src is the source array  so src[i] gives you item.
 
 let color ="";
@@ -113,10 +113,6 @@ let strikethrough = "";
 if (item.AisleId > 50) {
     strikethrough = " strikethrough"; // leading space needed
 }
-// wasn't required
-// else {
-//   strikethrough = "nostyle"
-// }
 
 // This is a bodge to correct any multiple "got" clicks. i.e. limit their ability to accumulate increments or decrements to the aisle ID.
 // I was looking for a way to toggle add 50 or remove 50 e.g. with a checkbox state but could only manage to get it to add and keep adding
@@ -129,9 +125,39 @@ else if (item.AisleId <= 0) {
   ShoppingList.update(item._id, {$inc: {AisleId: 50}})
 }
 
+let previousIndex = index-1;
+let current = sourceArray[index].AisleId;
+
+let previous = 0;
+if (previousIndex >=0) {
+previous = sourceArray[previousIndex].AisleId;
+}
+
+if (current - previous >=29)
+{
+  return (
+
+<div>
+  <div className="div-divide"></div>
+      <p key={item._id} className={"listItem" + " " + color + strikethrough}>
+        {item.item}
+        <button name="got" className="itemButton"
+          onClick={()=>
+            ShoppingList.update(item._id, {$inc: {AisleId: 50}})
+          }>Got</button>
+          <button name="re-add" className="itemButton"
+            onClick={()=>
+              ShoppingList.update(item._id, {$inc: {AisleId: -50}})
+            }>Re-Add</button>
+        <button name="remove" className="itemButton removeButton"
+          onClick={() => ShoppingList.remove(item._id)}>X</button></p>
+</div>
+    ) // changed to shorthand for removal targeting by id, in each instance
+}
+else {
 return (
     <p key={item._id} className={"listItem" + " " + color + strikethrough}>
-      {item.item} {item.quantity}
+      {item.item}
       <button name="got" className="itemButton"
         onClick={()=>
           ShoppingList.update(item._id, {$inc: {AisleId: 50}})
@@ -143,6 +169,7 @@ return (
       <button name="remove" className="itemButton removeButton"
         onClick={() => ShoppingList.remove(item._id)}>X</button></p> // changed to shorthand for removal targeting by id, in each instance
   )
+}
   });
 }
 

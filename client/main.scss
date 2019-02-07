@@ -78,11 +78,20 @@ margin: 0 0 3rem 0;
   font-size: 4rem;
   font-weight: 500;
   border: 1px solid #e8e8e8;
-  margin: 2rem 0 1rem 1rem;;
+  margin: 2rem 0 1rem 1rem;
   padding: 1.3rem;
   border: solid 2px #d0d9e5;
   width: 50%;
   //display: flex;
+}
+
+.itemTextBox {
+  line-height: 8rem;
+margin: 2rem 0 1rem 1rem;
+width: 50%;
+font-size: 4rem;
+font-weight: 500;
+padding: 1.3rem;
 }
 
 .itemButton {
@@ -103,9 +112,26 @@ margin: 0 0 3rem 0;
   width: 8rem;
 }
 
+.div-divide {
+  //width: 1024px;
+  padding: 0px;
+  //margin-left: 0px;
+  margin: 1rem 0 5rem 0;
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+  background: #cfcf00;
+  height: 5px;
+  width: 95rem;
+}
+
+.divider {
+  margin-top: 50px;
+  border-top: dashed black 10px;
+}
 
 .strikethrough {
   text-decoration: line-through;
+  font-style: oblique;
 }
 
 .check {
