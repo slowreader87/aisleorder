@@ -45,21 +45,15 @@ font-size: 62.5%;
 .wrapper {
   margin: 0 auto; // sets the top and bottom to 0px and
                   //left and right to auto, centering the content
-  max-width: 120rem;
+  //max-width: 120rem;
   padding: 1.3rem;
   width: 80%;
   min-width: 96rem; // ensures it doesnt all start flowing when you resize the page!
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
 }
 
 .buttonsDiv {
-display: flex;
 width: 100%;
 margin: 0 0 3rem 0;
-align-items: center;
 }
 
 .listItem {

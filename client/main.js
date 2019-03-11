@@ -228,7 +228,7 @@ const items = ShoppingList.find({}, {sort: {AisleId:1}, limit:100}).fetch(); // 
         <button className="button colorBaby"
                 onClick={() => ShoppingList.insert({Aisle: 'Baby', AisleId: 22, createdAt: new Date()})}>
                 Baby</button>
-
+	<br></br>
         <button className="button colorMandS"
                 onClick={() => ShoppingList.insert({Aisle: 'M & S', AisleId: 7, createdAt: new Date()})}>
                 M & S</button>
@@ -238,7 +238,6 @@ const items = ShoppingList.find({}, {sort: {AisleId:1}, limit:100}).fetch(); // 
         <button className="button colorWilko"
                 onClick={() => ShoppingList.insert({Aisle: 'Wilko', AisleId: 9, createdAt: new Date()})}>
                 Wilko</button>
-
         <button className="button colorTop"
                 onClick={() => ShoppingList.insert({Aisle: 'Top', AisleId: 1, createdAt: new Date()})}>
                 *Top*</button>
