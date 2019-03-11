@@ -95,7 +95,7 @@ switch (item.Aisle)
   break;
 
   case "Boots":
-  color = "colorBootsItem"
+  color = "colorBoots"
   break;
 
   case "Wilko":

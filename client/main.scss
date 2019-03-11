@@ -1,7 +1,5 @@
-// body {
-//   padding: 10px;
-//   font-family: sans-serif;
-// }
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
   margin: 0px;
@@ -16,7 +14,7 @@ h1 {
 background: #e35557;
 color: white; // means white text and reddish bg
 max-width: 90rem;
-padding: 2rem;
+padding: 2rem 6rem;
 }
 
 .tagline {
@@ -30,7 +28,7 @@ padding: 2rem;
 body {
   background: #f2f2f2;
   color:#555555;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
 }
 
@@ -127,8 +125,8 @@ padding: 1.3rem;
   margin: 1rem 0 5rem 0;
   border-top: solid black 2px;
   border-bottom: solid black 2px;
-  background: #cfcf00;
-  height: 5px;
+  background: rgba(207, 207, 0, 0.3);
+  height: 10px;
   width: 95rem;
 }
 
@@ -201,77 +199,80 @@ transition: background .2s ease, transform .2s ease;
 }
 
 .colorFruitandVeg {
-  background:#29c67a;
+  background: rgba(41, 198, 122, 0.6);
 }
 
 .colorDairy {
-  background:#fff9e2;
+  background: rgba(255, 249, 226, 0.8);
 }
 
 .colorMeatandFish {
-  background:#ff4f4f;
+  background: rgba(255, 79, 79, 0.75);
+  color: black;
 }
 
 .colorReadyMeals {
-  background:#fcd95a;
+  background: rgba(252, 217, 90, 0.6);
 }
 
 .colorHamsandDips {
-  background: #f5afff;
+  background: rgba(159, 173, 138, 0.9);
 }
 
 .colorCounter {
-  background: #e0e0d5;
+  background: rgba(17, 76, 91, 0.6);
+  //color: #f4f4f4;
 }
 
 .colorDry {
-  background: #c1974d;
+  background: rgba(193, 151, 77, 0.7);
 }
 
 .colorHousehold {
-  background: #70cce5;
+  background: rgba(112, 204, 229, 0.7);
 }
 
 .colorBread {
-  background: #d3cf9e;
+  background: rgba(211, 207, 158, 0.8);
 }
 
 .colorBaking {
-  background: #b49ce5;
+  //background: #b49ce5;
+  background: rgba(122, 82, 201, 0.7);
 }
 
 .colorFrozen {
-  background: #2be2ef;
+  //background: #2be2ef;
+  background: rgba(142, 247, 255, 0.7);
 }
 
 .colorBaby {
-  background: #f7cdf4;
+//background: #f7cdf4;
+  background: rgba(255, 216, 252, 0.9);
 }
 
 .colorMandS {
-  background: #309100;
-  border: red dashed 4px;
+//background: #309100;
+  background: rgba(34, 99, 48, 0.9);
+  color: white;
+  border: rgba(188, 26, 26, 0.7) dashed 4px;
 }
 
 .colorBoots {
-  background: #1f62c6;
+//background: #1f62c6;
+  background: rgba(31, 98, 198, 0.75);
+  color: black;
   border: white dashed 4px;
 }
 
-.colorBootsItem {
-  background: #1f62c6;
-  border: white dashed 4px;
-  color: white;
-}
 .colorWilko {
-  background: #ff7860;
-  border: blue dashed 4px;
+// background: #ff7860;
+   background: rgba(255, 120, 96, 0.6);
+border: blue dashed 4px;
 }
 
 .colorTop {
-  background: #ef862b;
+//background: #ef862b;
+  background: rgba(239, 134, 43, 0.7);
 }
 
-.button-colorBlue {
-  background:#56a5ef;
-}
