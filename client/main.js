@@ -141,10 +141,6 @@ if (current - previous >=29)
   <div className="div-divide"></div>
       <p key={item._id} className={"listItem" + " " + color + strikethrough}>
         {item.item}
-        <button name="got" className="itemButton"
-          onClick={()=>
-            ShoppingList.update(item._id, {$inc: {AisleId: 50}})
-          }>Got</button>
           <button name="re-add" className="itemButton"
             onClick={()=>
               ShoppingList.update(item._id, {$inc: {AisleId: -50}})
@@ -155,20 +151,38 @@ if (current - previous >=29)
     ) // changed to shorthand for removal targeting by id, in each instance
 }
 else {
+
+if (item.AisleId > 50) {
+// only Re-Add (Purchased Item)
 return (
-    <p key={item._id} className={"listItem" + " " + color + strikethrough}>
+<div key={item._id} className="listItemContainer">
+    <p className={"listItem" + " " + color + strikethrough}>
       {item.item}
-      <button name="got" className="itemButton"
-        onClick={()=>
-          ShoppingList.update(item._id, {$inc: {AisleId: 50}})
-        }>Got</button>
         <button name="re-add" className="itemButton"
           onClick={()=>
             ShoppingList.update(item._id, {$inc: {AisleId: -50}})
           }>Re-Add</button>
       <button name="remove" className="itemButton removeButton"
-        onClick={() => ShoppingList.remove(item._id)}>X</button></p> // changed to shorthand for removal targeting by id, in each instance
-  )
+        onClick={() => ShoppingList.remove(item._id)}>X</button></p>
+</div> 
+ )	}
+
+else {
+// only Got (non-purchased items)
+return (
+<div key={item._id} className="listItemContainer">
+    <p className={"listItem" + " " + color + strikethrough}>
+      {item.item}
+      <button name="got" className="itemButton"
+        onClick={()=>
+          ShoppingList.update(item._id, {$inc: {AisleId: 50}})
+        }>Got</button>
+        <button name="remove" className="itemButton removeButton"
+        onClick={() => ShoppingList.remove(item._id)}>X</button></p>
+</div> 
+ )
+	}
+
 }
   });
 }
