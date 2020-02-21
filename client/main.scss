@@ -93,11 +93,11 @@ align-items: center;
 
 .itemTextBox {
   line-height: 8rem;
-margin: 2rem 0 1rem 1rem;
-width: 50%;
-font-size: 4rem;
-font-weight: 500;
-padding: 1.3rem;
+  margin: 2rem 0 1rem 1rem;
+  width: 50%;
+  font-size: 4rem;
+  font-weight: 500;
+  padding: 1.3rem;
 }
 
 .itemButton {
@@ -146,22 +146,6 @@ padding: 1.3rem;
   zoom: 2;
   margin-left: 30rem;
   //align-items: center;
-}
-
-.quantityBox {
-  //background: #edeff2;
-  max-width: 14rem;
-  margin-left: 2rem;
-
-  //border: 1px solid #555555;
-  // //height: rem;
-  // width: 5rem;
-  // padding-left: 0.5rem;
-  // margin-top: 2rem;
-  // margin-left: 2rem;
-  // line-height: 4rem;
-  // border-radius: 5%;
-  // font-size: 3rem;
 }
 
 .strikeThrough {
